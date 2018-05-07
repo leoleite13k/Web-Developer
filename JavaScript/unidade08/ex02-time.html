@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            var agora = new Date();
+            
+            function setDoisDigitos(tempo) {
+                if (tempo < 10) {
+                    return "0" + tempo;
+                }
+                else {
+                    return tempo;
+                }
+            }    
+            
+            console.log (setDoisDigitos(agora.getHours()) + ":" + setDoisDigitos(agora.getMinutes()) + ":" + setDoisDigitos(agora.getSeconds()))
+            
+            var aniversario = new Date (1994,10,13,6,2,1)
+            var mes = ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro"]
+            
+            
+            console.log(aniversario.getDate() + "/" + mes[aniversario.getMonth()] + "/" + aniversario.getFullYear() + " " + setDoisDigitos(aniversario.getHours()) + ":" + setDoisDigitos(aniversario.getMinutes()) + ":" + setDoisDigitos(aniversario.getSeconds()));
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
