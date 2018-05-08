@@ -7,21 +7,27 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$(function(e) {
+                //remover
+                //$("li:first").remove();
+                
+                //alterar
+                $("li:last").replaceWith("<li>Curso BootStrap</li>")
+                $("ul").wrapAll("<div style='border: 1px solid #CCC'></div>")
 				
 			})
 		</script>        
     </head>
 
     <body>
-    	
-      
-		<ul>
-        		
-            <li>Curso HTML5 Essencial</li>
-            <li>Curso CSS3 Essencial</li>
-            <li>Curso Javascript Essencial</li>
-            <li>Curso jQuery Fundamental</li>
-        </ul>
+        <div> 	
+            <ul>
+
+                <li>Curso HTML5 Essencial</li>
+                <li>Curso CSS3 Essencial</li>
+                <li>Curso Javascript Essencial</li>
+                <li>Curso jQuery Fundamental</li>
+            </ul>
+        </div>
         
     </body>
 
