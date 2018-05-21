@@ -26,19 +26,20 @@
 			nav li:first-child 	{ background-image:url(imagem/futebol.png) } 
 			nav li:nth-child(2) { background-image:url(imagem/basquete.png) }
             
-            #primeira {width: 300px; height: 500px; background-color: aquamarine}
+            #primeira {width: 300px; height: 800px; background-color: aquamarine}
             
-            #segunda {width: 300px; height: 500px; background-color: blueviolet}
+            #segunda  {width: 300px; height: 800px; background-color: blueviolet}
         </style>
          
         <script src="jquery-3.2.1.min.js"></script>
         <script>		
 			$( function(e) { 	
-                $('nav li:nth-child(2)').click(function(e)) {
-                    $('html,body').animate( {scrollTop:300}, 1000 
-                 )};
-
-			});			
+                $('nav li:nth-child(2)').click( function(e) {
+                    $('html,body').animate( {scrollTop:800}, 1000); 
+                                           
+                 });
+                 });
+                                               
 		</script>   
     </head>
     <body>

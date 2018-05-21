@@ -6,6 +6,22 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
+            $(function(e){
+               $('#cursohtml').click( function (e) {
+                   alert("Clicou no botao HTML");
+               })
+
+              /* $('#cursocss').bind("click",function(e) {
+                   alert("Clicou no botao CSS");
+               })*/
+                
+               function mostrarMensagem () {
+                  alert("Clicou no botao CSS");
+                  $('#cursocss').unbind("click",mostrarMensagem);
+               }; 
+               $('#cursocss').bind("click",mostrarMensagem);
+                
+            });
 					
 		</script>        
     </head>
